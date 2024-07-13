@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+ 
+background-color: #eee;
+
+
+}
+.content{
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.navbar-custom{
+          background-image: linear-gradient(120deg,  #8ec5fc 100%, #e0c3fc 0%);
+
+        }
+
+
+.navbar a {
+ font-family: "Fjalla One", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size:40px;
+ color: white;
+ }
+    
+.main {
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+#wallpaper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.99;
+  
+ }
+ 
+ .header-title h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 70px;
+    color: aliceblue;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .sub-head h2{
+    position: absolute;
+    top:90%;
+    left:10%;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: "Fenix", serif;
+   font-weight: 400;
+   font-style: normal;
+  }
+ 
+  #lhead{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+  }
+  .input-ly{
+    display:flex;
+    justify-content: space-evenly;
+  }
+
+  .input {
+	
+    position:relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+    
+    *:not(span) {
+      position: relative;
+      display: inherit;
+      border-radius: inherit;
+      margin: 0;
+      border: none;
+      outline: none;
+      padding: 0 .325em;
+      z-index: 1; 
+      
+      &:focus + span {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    span {
+      
+      transform: scale(.993, .94); 
+      transition: transform .5s, opacity .25s;
+      opacity: 0; 
+      
+      position:absolute;
+      z-index: 0; 
+      margin:4px; 
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      border-radius: inherit;
+      pointer-events: none; 
+      box-shadow: inset 0 0 0 3px #fff,
+        0 0 0 4px #fff,
+        3px -3px 30px #1beabd, 
+        -3px 3px 30px #10abff;
+    }
+    
+  }
+
+
+           
+  .btn-grad {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+   font-size: 20px;
+   font-family: "Itim", cursive;
+   font-weight: 400;
+   font-style: normal;
+  }
+ 
+  #button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration:azure;
+  }
+  
+  #box {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .gradient-box{
+    color: #fff;
+    margin-top: 50px;
+    padding: 15px 10px;
+    width: 70%;
+   text-align: center;
+  background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%) padding-box,
+              linear-gradient(to top, #cc208e , #6713d2) border-box;
+  border-radius:10px;
+  border: 6px solid transparent;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+
+  }
+ 
+  
