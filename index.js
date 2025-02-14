@@ -4,8 +4,8 @@ import axios from "axios";
 
 var bool;
 const app=express();
-const port=3000;
-const API_URL="https://api.lyrics.ovh/v1";
+const port=process.env.PORT || 3000;
+const API_URL=process.env.API_URL;
 var artistname;
 var songname;
 
