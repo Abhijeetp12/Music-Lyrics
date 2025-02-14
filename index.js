@@ -25,7 +25,7 @@ app.post("/submit",async (req,res)=>{
 
     try {
         const result = await axios.get(API_URL + `/${artistname}/${songname}`);
-        let Lyrics = result.data.lyrics.replace(/\r?\n/g, "<br>");
+        let Lyrics = result.data.lyrics.replace(/\r?\n/g, " ");
         res.render("index.ejs", { content: Lyrics,bool});
       } catch (error) {
         res.render("index.ejs",{content:"error: lyrics not found",bool});
